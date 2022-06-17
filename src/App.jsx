@@ -1,7 +1,7 @@
 import Title from './Title';
 import Button from './Button';
-import SayName from './SayName';
 import Noticia from './Noticia';
+import "./App.css"
 
 function App() {
     const lista_noticias = [
@@ -20,12 +20,14 @@ function App() {
     ];
 
     return (
-        <div>
+        <div className='container'>
             <Title />
 
             {lista_noticias.map((noticia) => {
                 return <Noticia horario={noticia.hour} desc={noticia.description} />
             })}
+
+            <Button frase="Mais Noticias" />
 
         </div>
 
