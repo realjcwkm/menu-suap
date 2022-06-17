@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import Button from './Button';
-import './Perfil.css';
+import './Noticia.css';
 
-
-
-function Perfil({nome, foto, idade}){
+function Noticia({horario, desc}){
     const [numeroVisualizacoes, setNumeroVisualizacoes] = useState(0);
 
     function aumentarVisualizacoes(){
@@ -13,11 +11,9 @@ function Perfil({nome, foto, idade}){
 
     return(
         <div className='card'>
-            <p classname= 'data'>25/05/2022 15:10</p>
-            <p className= "cardTitle">Manutenção do Sistema SUAP acontece nesta sexta-feira(27) </p>
-            
-            
+            <p className='data'>{horario}</p>
+            <p className="desc">{desc}</p>
         </div>
     );
 }
-export default Perfil;
+export default Noticia;
