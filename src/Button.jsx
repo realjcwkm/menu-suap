@@ -1,12 +1,9 @@
-function Button({cor, frase, contador, atualiza}){
+import "./Button.css";
 
-    function clickMouse(){
-        atualiza(contador+1)
-    }
-
+function Button({frase}){
     return(
-        <button style={{backgroundColor: cor}} onClick={clickMouse} >
-        {frase} {contador}
+        <button className="maisNoticias" >
+        {frase}
         </button>
     );
 }
