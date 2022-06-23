@@ -28,6 +28,7 @@ function App() {
             })}
 
             <Button frase="Mais Noticias" />
+            <div>Feliz Pascoa</div>
 
         </div>
 
